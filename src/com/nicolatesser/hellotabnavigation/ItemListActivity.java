@@ -1,12 +1,16 @@
 package com.nicolatesser.hellotabnavigation;
 
-import android.app.ActionBar;
-import android.app.ActionBar.Tab;
-import android.app.FragmentTransaction;
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.view.View;
+import android.view.View.OnClickListener;
 
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 import com.nicolatesser.hellonavigation.R;
 
 /**
@@ -24,8 +28,8 @@ import com.nicolatesser.hellonavigation.R;
  * This activity also implements the required {@link ItemListFragment.Callbacks}
  * interface to listen for item selections.
  */
-public class ItemListActivity extends FragmentActivity implements
-		ItemListFragment.Callbacks, ActionBar.TabListener {
+public class ItemListActivity extends SherlockFragmentActivity implements
+		ItemListFragment.Callbacks {
 
 	/**
 	 * Whether or not the activity is in two-pane mode, i.e. running on a tablet
@@ -39,17 +43,49 @@ public class ItemListActivity extends FragmentActivity implements
 		setContentView(R.layout.activity_item_list);
 
 		// Set up the action bar to show tabs.
-		final ActionBar actionBar = getActionBar();
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		final ActionBar actionBar = getSupportActionBar();
+		actionBar.setCustomView(R.layout.ab_custom);
 
-		// for each of the sections in the app, add a tab to the action bar.
-		actionBar.addTab(actionBar.newTab().setText("Items")
-						.setTabListener(this), false);
-		actionBar.addTab(actionBar.newTab().setText("Less Important Items")
-				.setTabListener(this), false);
-		actionBar.setDisplayShowTitleEnabled(false);
+		// LayoutInflater inflator = (LayoutInflater) this
+		// .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		// View v = inflator.inflate(R.layout.ab_custom, null);
+		// actionBar.setCustomView(v);
 
-		actionBar.setSelectedNavigationItem(0);
+		actionBar.setDisplayShowCustomEnabled(true);
+		actionBar.setDisplayUseLogoEnabled(false);
+		actionBar.setDisplayShowHomeEnabled(false);
+		actionBar.setDisplayShowTitleEnabled(true);
+		actionBar.setTitle("1");
+
+
+		findViewById(R.id.btn1).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent activity1 = new Intent(getApplicationContext(),
+						ItemListActivity.class);
+				startActivity(activity1);
+			}
+		});
+
+		findViewById(R.id.btn2)
+				.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent activity2 = new Intent(getApplicationContext(),
+						LessImportantItemListActivity.class);
+				startActivity(activity2);
+			}
+		});
+
+		// actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+		// actionBar.setDisplayShowTitleEnabled(false);
+		// actionBar.setDisplayShowCustomEnabled(true);
+		// LayoutInflater inflator = (LayoutInflater) this
+		// .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		// View v = inflator.inflate(R.layout.ab_custom, null);
+		// actionBar.setCustomView(v);
+
+
 
 		if (findViewById(R.id.item_detail_container) != null) {
 			// The detail container view will be present only in the
@@ -70,8 +106,7 @@ public class ItemListActivity extends FragmentActivity implements
 	@Override
 	protected void onResume() {
 		super.onResume();
-		final ActionBar actionBar = getActionBar();
-		actionBar.setSelectedNavigationItem(0);
+
 	}
 
 	/**
@@ -101,29 +136,26 @@ public class ItemListActivity extends FragmentActivity implements
 	}
 
 	@Override
-	public void onTabReselected(Tab arg0, FragmentTransaction arg1) {
-		// TODO Auto-generated method stub
-
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getSupportMenuInflater();
+		inflater.inflate(R.menu.menu, menu);
+		return true;
 	}
 
 	@Override
-	public void onTabSelected(Tab tab, FragmentTransaction arg1) {
-		// if (tab.getText().equals("Items")) {
-		// Intent detailIntent = new Intent(this, ItemListActivity.class);
-		// startActivity(detailIntent);
-		// } else
-		if (tab.getText().equals("Less Important Items")) {
-			Intent detailIntent = new Intent(this,
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.btn1:
+			Intent activity1 = new Intent(this, ItemListActivity.class);
+			startActivity(activity1);
+			return true;
+		case R.id.btn2:
+			Intent activity2 = new Intent(this,
 					LessImportantItemListActivity.class);
-			startActivity(detailIntent);
+			startActivity(activity2);
+			return true;
 		}
+		return super.onOptionsItemSelected(item);
 	}
-
-	@Override
-	public void onTabUnselected(Tab arg0, FragmentTransaction arg1) {
-		// TODO Auto-generated method stub
-
-	}
-
 
 }

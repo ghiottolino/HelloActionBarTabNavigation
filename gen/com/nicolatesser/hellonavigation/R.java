@@ -905,54 +905,57 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020070;
     }
     public static final class id {
-        public static final int abs__action_bar=0x7f040020;
-        public static final int abs__action_bar_container=0x7f04001f;
-        public static final int abs__action_bar_subtitle=0x7f040011;
-        public static final int abs__action_bar_title=0x7f040010;
-        public static final int abs__action_context_bar=0x7f040021;
+        public static final int abs__action_bar=0x7f040022;
+        public static final int abs__action_bar_container=0x7f040021;
+        public static final int abs__action_bar_subtitle=0x7f040013;
+        public static final int abs__action_bar_title=0x7f040012;
+        public static final int abs__action_context_bar=0x7f040023;
         public static final int abs__action_menu_divider=0x7f04000c;
         public static final int abs__action_menu_presenter=0x7f04000d;
-        public static final int abs__action_mode_bar=0x7f040025;
-        public static final int abs__action_mode_bar_stub=0x7f040024;
-        public static final int abs__action_mode_close_button=0x7f040014;
-        public static final int abs__activity_chooser_view_content=0x7f040015;
-        public static final int abs__checkbox=0x7f04001c;
-        public static final int abs__content=0x7f040022;
-        public static final int abs__default_activity_button=0x7f040018;
-        public static final int abs__expand_activities_button=0x7f040016;
+        public static final int abs__action_mode_bar=0x7f040027;
+        public static final int abs__action_mode_bar_stub=0x7f040026;
+        public static final int abs__action_mode_close_button=0x7f040016;
+        public static final int abs__activity_chooser_view_content=0x7f040017;
+        public static final int abs__checkbox=0x7f04001e;
+        public static final int abs__content=0x7f040024;
+        public static final int abs__default_activity_button=0x7f04001a;
+        public static final int abs__expand_activities_button=0x7f040018;
         public static final int abs__home=0x7f04000a;
-        public static final int abs__icon=0x7f04001a;
-        public static final int abs__image=0x7f040017;
-        public static final int abs__imageButton=0x7f040012;
-        public static final int abs__list_item=0x7f040019;
+        public static final int abs__icon=0x7f04001c;
+        public static final int abs__image=0x7f040019;
+        public static final int abs__imageButton=0x7f040014;
+        public static final int abs__list_item=0x7f04001b;
         public static final int abs__progress_circular=0x7f04000e;
         public static final int abs__progress_horizontal=0x7f04000f;
-        public static final int abs__radio=0x7f04001d;
-        public static final int abs__search_badge=0x7f040028;
-        public static final int abs__search_bar=0x7f040027;
-        public static final int abs__search_button=0x7f040029;
-        public static final int abs__search_close_btn=0x7f04002e;
-        public static final int abs__search_edit_frame=0x7f04002a;
-        public static final int abs__search_go_btn=0x7f040030;
-        public static final int abs__search_mag_icon=0x7f04002b;
-        public static final int abs__search_plate=0x7f04002c;
-        public static final int abs__search_src_text=0x7f04002d;
-        public static final int abs__search_voice_btn=0x7f040031;
-        public static final int abs__shortcut=0x7f04001e;
-        public static final int abs__split_action_bar=0x7f040023;
-        public static final int abs__submit_area=0x7f04002f;
-        public static final int abs__textButton=0x7f040013;
-        public static final int abs__title=0x7f04001b;
+        public static final int abs__radio=0x7f04001f;
+        public static final int abs__search_badge=0x7f04002a;
+        public static final int abs__search_bar=0x7f040029;
+        public static final int abs__search_button=0x7f04002b;
+        public static final int abs__search_close_btn=0x7f040030;
+        public static final int abs__search_edit_frame=0x7f04002c;
+        public static final int abs__search_go_btn=0x7f040032;
+        public static final int abs__search_mag_icon=0x7f04002d;
+        public static final int abs__search_plate=0x7f04002e;
+        public static final int abs__search_src_text=0x7f04002f;
+        public static final int abs__search_voice_btn=0x7f040033;
+        public static final int abs__shortcut=0x7f040020;
+        public static final int abs__split_action_bar=0x7f040025;
+        public static final int abs__submit_area=0x7f040031;
+        public static final int abs__textButton=0x7f040015;
+        public static final int abs__title=0x7f04001d;
         public static final int abs__up=0x7f04000b;
+        public static final int action_settings=0x7f04003a;
+        public static final int btn1=0x7f040010;
+        public static final int btn2=0x7f040011;
         public static final int disableHome=0x7f040009;
-        public static final int edit_query=0x7f040026;
+        public static final int edit_query=0x7f040028;
         public static final int homeAsUp=0x7f040006;
-        public static final int item_detail=0x7f040036;
-        public static final int item_detail_container=0x7f040032;
-        public static final int item_list=0x7f040033;
-        public static final int lessimportantitem_detail=0x7f040037;
-        public static final int lessimportantitem_detail_container=0x7f040034;
-        public static final int lessimportantitem_list=0x7f040035;
+        public static final int item_detail=0x7f040038;
+        public static final int item_detail_container=0x7f040034;
+        public static final int item_list=0x7f040035;
+        public static final int lessimportantitem_detail=0x7f040039;
+        public static final int lessimportantitem_detail_container=0x7f040036;
+        public static final int lessimportantitem_list=0x7f040037;
         public static final int listMode=0x7f040002;
         public static final int normal=0x7f040001;
         public static final int showCustom=0x7f040008;
@@ -966,28 +969,29 @@ containing a value of this type.
         public static final int abs__max_action_buttons=0x7f080000;
     }
     public static final class layout {
-        public static final int abs__action_bar_home=0x7f030000;
-        public static final int abs__action_bar_tab=0x7f030001;
-        public static final int abs__action_bar_tab_bar_view=0x7f030002;
-        public static final int abs__action_bar_title_item=0x7f030003;
-        public static final int abs__action_menu_item_layout=0x7f030004;
-        public static final int abs__action_menu_layout=0x7f030005;
-        public static final int abs__action_mode_bar=0x7f030006;
-        public static final int abs__action_mode_close_item=0x7f030007;
-        public static final int abs__activity_chooser_view=0x7f030008;
-        public static final int abs__activity_chooser_view_list_item=0x7f030009;
-        public static final int abs__list_menu_item_checkbox=0x7f03000a;
-        public static final int abs__list_menu_item_icon=0x7f03000b;
-        public static final int abs__list_menu_item_radio=0x7f03000c;
-        public static final int abs__popup_menu_item_layout=0x7f03000d;
-        public static final int abs__screen_action_bar=0x7f03000e;
-        public static final int abs__screen_action_bar_overlay=0x7f03000f;
-        public static final int abs__screen_simple=0x7f030010;
-        public static final int abs__screen_simple_overlay_action_mode=0x7f030011;
-        public static final int abs__search_dropdown_item_icons_2line=0x7f030012;
-        public static final int abs__search_view=0x7f030013;
-        public static final int abs__simple_dropdown_hint=0x7f030014;
-        public static final int activity_item_detail=0x7f030015;
+        public static final int ab_custom=0x7f030000;
+        public static final int abs__action_bar_home=0x7f030001;
+        public static final int abs__action_bar_tab=0x7f030002;
+        public static final int abs__action_bar_tab_bar_view=0x7f030003;
+        public static final int abs__action_bar_title_item=0x7f030004;
+        public static final int abs__action_menu_item_layout=0x7f030005;
+        public static final int abs__action_menu_layout=0x7f030006;
+        public static final int abs__action_mode_bar=0x7f030007;
+        public static final int abs__action_mode_close_item=0x7f030008;
+        public static final int abs__activity_chooser_view=0x7f030009;
+        public static final int abs__activity_chooser_view_list_item=0x7f03000a;
+        public static final int abs__list_menu_item_checkbox=0x7f03000b;
+        public static final int abs__list_menu_item_icon=0x7f03000c;
+        public static final int abs__list_menu_item_radio=0x7f03000d;
+        public static final int abs__popup_menu_item_layout=0x7f03000e;
+        public static final int abs__screen_action_bar=0x7f03000f;
+        public static final int abs__screen_action_bar_overlay=0x7f030010;
+        public static final int abs__screen_simple=0x7f030011;
+        public static final int abs__screen_simple_overlay_action_mode=0x7f030012;
+        public static final int abs__search_dropdown_item_icons_2line=0x7f030013;
+        public static final int abs__search_view=0x7f030014;
+        public static final int abs__simple_dropdown_hint=0x7f030015;
+        public static final int activity_item_detail=0x7f030016;
         /** 
     Layout alias to replace the single-pane version of the layout with a
     two-pane version on Large screens.
@@ -1003,15 +1007,18 @@ containing a value of this type.
     http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
     
          */
-        public static final int activity_item_list=0x7f030016;
-        public static final int activity_item_twopane=0x7f030017;
-        public static final int activity_lessimportantitem_detail=0x7f030018;
-        public static final int activity_lessimportantitem_list=0x7f030019;
-        public static final int activity_lessimportantitem_twopane=0x7f03001a;
-        public static final int fragment_item_detail=0x7f03001b;
-        public static final int fragment_lessimportantitem_detail=0x7f03001c;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001d;
-        public static final int sherlock_spinner_item=0x7f03001e;
+        public static final int activity_item_list=0x7f030017;
+        public static final int activity_item_twopane=0x7f030018;
+        public static final int activity_lessimportantitem_detail=0x7f030019;
+        public static final int activity_lessimportantitem_list=0x7f03001a;
+        public static final int activity_lessimportantitem_twopane=0x7f03001b;
+        public static final int fragment_item_detail=0x7f03001c;
+        public static final int fragment_lessimportantitem_detail=0x7f03001d;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001e;
+        public static final int sherlock_spinner_item=0x7f03001f;
+    }
+    public static final class menu {
+        public static final int menu=0x7f0b0000;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

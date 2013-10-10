@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.nicolatesser.hellonavigation.dummy.DummyContent;
+import com.nicolatesser.hellonavigation.dummy.DummyContent2;
 
 /**
  * A list fragment representing a list of LessImportantItems. This fragment also
@@ -71,9 +71,9 @@ public class LessImportantItemListFragment extends ListFragment {
 		super.onCreate(savedInstanceState);
 
 		// TODO: replace with a real list adapter.
-		setListAdapter(new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
+		setListAdapter(new ArrayAdapter<DummyContent2.DummyItem>(getActivity(),
 				android.R.layout.simple_list_item_activated_1,
-				android.R.id.text1, DummyContent.ITEMS));
+				android.R.id.text1, DummyContent2.ITEMS));
 	}
 
 	@Override
@@ -116,7 +116,7 @@ public class LessImportantItemListFragment extends ListFragment {
 
 		// Notify the active callbacks interface (the activity, if the
 		// fragment is attached to one) that an item has been selected.
-		mCallbacks.onItemSelected(DummyContent.ITEMS.get(position).id);
+		mCallbacks.onItemSelected(DummyContent2.ITEMS.get(position).id);
 	}
 
 	@Override

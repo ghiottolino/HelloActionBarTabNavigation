@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!--     <item
+        android:id="@+id/action_items"
+        android:title="Items"
+        android:layout_width="50dp" 
+        android:layout_weight="1"
+        android:showAsAction="always">
+    </item>
+    
+    <item
+        android:id="@+id/action_items"
+        android:title="Less Important Items"
+        android:layout_width="50dp" 
+        android:layout_weight="1"
+        android:showAsAction="always">
+    </item> -->
+    
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings">
+    </item>
+
+</menu> 

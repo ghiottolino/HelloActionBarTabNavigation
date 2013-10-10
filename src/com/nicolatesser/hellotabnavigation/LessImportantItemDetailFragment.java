@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.nicolatesser.hellonavigation.R;
-import com.nicolatesser.hellonavigation.dummy.DummyContent;
+import com.nicolatesser.hellonavigation.dummy.DummyContent2;
 
 /**
  * A fragment representing a single LessImportantItem detail screen. This
@@ -26,7 +26,7 @@ public class LessImportantItemDetailFragment extends Fragment {
 	/**
 	 * The dummy content this fragment is presenting.
 	 */
-	private DummyContent.DummyItem mItem;
+	private DummyContent2.DummyItem mItem;
 
 	/**
 	 * Mandatory empty constructor for the fragment manager to instantiate the
@@ -43,7 +43,7 @@ public class LessImportantItemDetailFragment extends Fragment {
 			// Load the dummy content specified by the fragment
 			// arguments. In a real-world scenario, use a Loader
 			// to load content from a content provider.
-			mItem = DummyContent.ITEM_MAP.get(getArguments().getString(
+			mItem = DummyContent2.ITEM_MAP.get(getArguments().getString(
 					ARG_ITEM_ID));
 		}
 	}
