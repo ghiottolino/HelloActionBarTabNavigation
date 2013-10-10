@@ -51,25 +51,56 @@ public class LessImportantItemListActivity extends SherlockFragmentActivity
 		actionBar.setDisplayUseLogoEnabled(false);
 		actionBar.setDisplayShowHomeEnabled(false);
 		actionBar.setDisplayShowTitleEnabled(true);
-		actionBar.setTitle("2");
 
-		findViewById(R.id.btn1).setOnClickListener(new OnClickListener() {
+		findViewById(R.id.btn3).setPressed(false);
+		findViewById(R.id.btn4).setPressed(true);
+		findViewById(R.id.btn5).setPressed(false);
+
+		// findViewById(R.id.btn1).setOnClickListener(new OnClickListener() {
+		// @Override
+		// public void onClick(View view) {
+		// Intent activity1 = new Intent(getApplicationContext(),
+		// ItemListActivity.class);
+		// startActivity(activity1);
+		// }
+		// });
+		//
+		// findViewById(R.id.btn2).setOnClickListener(new OnClickListener() {
+		// @Override
+		// public void onClick(View view) {
+		// Intent activity2 = new Intent(getApplicationContext(),
+		// LessImportantItemListActivity.class);
+		// startActivity(activity2);
+		// }
+		// });
+
+		findViewById(R.id.btn3).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				Intent activity1 = new Intent(getApplicationContext(),
+				Intent activity3 = new Intent(getApplicationContext(),
 						ItemListActivity.class);
-				startActivity(activity1);
+				startActivity(activity3);
 			}
 		});
 
-		findViewById(R.id.btn2).setOnClickListener(new OnClickListener() {
+		findViewById(R.id.btn4).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				Intent activity2 = new Intent(getApplicationContext(),
+				Intent activity4 = new Intent(getApplicationContext(),
 						LessImportantItemListActivity.class);
-				startActivity(activity2);
+				startActivity(activity4);
 			}
 		});
+
+		findViewById(R.id.btn5).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Intent activity5 = new Intent(getApplicationContext(),
+						ItemListActivity.class);
+				startActivity(activity5);
+			}
+		});
+
 
 		if (findViewById(R.id.lessimportantitem_detail_container) != null) {
 			// The detail container view will be present only in the
@@ -132,17 +163,17 @@ public class LessImportantItemListActivity extends SherlockFragmentActivity
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case R.id.btn1:
-			Intent activity1 = new Intent(this, ItemListActivity.class);
-			startActivity(activity1);
-			return true;
-		case R.id.btn2:
-			Intent activity2 = new Intent(this,
-					LessImportantItemListActivity.class);
-			startActivity(activity2);
-			return true;
-		}
+		// switch (item.getItemId()) {
+//		case R.id.btn1:
+//			Intent activity1 = new Intent(this, ItemListActivity.class);
+//			startActivity(activity1);
+//			return true;
+//		case R.id.btn2:
+//			Intent activity2 = new Intent(this,
+//					LessImportantItemListActivity.class);
+//			startActivity(activity2);
+//			return true;
+//		}
 		return super.onOptionsItemSelected(item);
 	}
 

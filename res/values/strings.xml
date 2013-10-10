@@ -2,6 +2,12 @@
 <resources>
 
     <string name="app_name">HelloActionBarTabNavigation</string>
+    
+    <string name="items">Items</string>
+    <string name="other_items">Other Items</string>
+    <string name="flat">Flat</string>
+    
+    
     <string name="title_item_detail">Item Detail</string>
     <string name="title_lessimportantitem_list">LessImportantItems</string>
     <string name="title_lessimportantitem_detail">LessImportantItem Detail</string>

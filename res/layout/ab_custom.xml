@@ -3,22 +3,69 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
-    android:orientation="horizontal" >
+>
 
-    <Button
+    <TextView
+        android:id="@+id/btn3"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/tab_indicator_ab"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="@drawable/tab_indicator_color_ab"
+        android:text="@string/items"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="-8dp"
+        android:padding="4dp"/>
+    
+    <TextView
+        android:id="@+id/btn4"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/tab_indicator_ab"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="@drawable/tab_indicator_color_ab"
+        android:text="@string/other_items"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="-8dp"
+                android:padding="4dp"/>
+        
+     <TextView
+        android:id="@+id/btn5"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/tab_indicator_ab"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="@drawable/tab_indicator_color_ab"
+        android:text="@string/items"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+                android:padding="4dp"/>
+    
+    
+<!--     <TextView
+        android:id="@+id/btn3"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/tab_indicator_ab"
+        android:text="@string/flat"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#cccccc" /> -->
+    
+<!--     <Button
         android:id="@+id/btn1"
         android:layout_width="150dp"
         android:layout_height="match_parent"
-         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="false"
-        android:text="Items" />
+        android:text="@string/items" />
 
     <Button
         android:id="@+id/btn2"
          android:layout_width="150dp"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/btn1"
-        android:text="Other Items" />
-
+        android:text="@string/other_items" /> -->
+    
 </LinearLayout>
