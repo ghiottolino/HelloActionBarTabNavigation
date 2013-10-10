@@ -248,12 +248,6 @@ int drawable tab_ab_unselected_focused 0x7f020075
 int drawable tab_ab_unselected_pressed 0x7f020076
 int drawable tab_indicator_ab 0x7f020077
 int drawable tab_indicator_color_ab 0x7f020078
-int drawable tab_selected_focused_telekom 0x7f020079
-int drawable tab_selected_pressed_telekom 0x7f02007a
-int drawable tab_selected_telekom 0x7f02007b
-int drawable tab_unselected_focused_telekom 0x7f02007c
-int drawable tab_unselected_pressed_telekom 0x7f02007d
-int drawable tab_unselected_telekom 0x7f02007e
 int id abs__action_bar 0x7f040023
 int id abs__action_bar_container 0x7f040022
 int id abs__action_bar_subtitle 0x7f040014

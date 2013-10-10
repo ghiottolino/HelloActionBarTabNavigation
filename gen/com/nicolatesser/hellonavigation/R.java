@@ -911,12 +911,6 @@ containing a value of this type.
         public static final int tab_ab_unselected_pressed=0x7f020076;
         public static final int tab_indicator_ab=0x7f020077;
         public static final int tab_indicator_color_ab=0x7f020078;
-        public static final int tab_selected_focused_telekom=0x7f020079;
-        public static final int tab_selected_pressed_telekom=0x7f02007a;
-        public static final int tab_selected_telekom=0x7f02007b;
-        public static final int tab_unselected_focused_telekom=0x7f02007c;
-        public static final int tab_unselected_pressed_telekom=0x7f02007d;
-        public static final int tab_unselected_telekom=0x7f02007e;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f040023;
